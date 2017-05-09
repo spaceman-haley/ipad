@@ -1,5 +1,5 @@
-<form action="index.php" method = "POST">
-  Serial Number: <input type="text" name="serial"><br>
+<form action="morris.php" method = "POST">
+  Serial Number: <input type="text" name="serial" ><br>
  
   <input type="submit" value="Submit">
 </form>
@@ -9,9 +9,9 @@
 
 	//sets variables and runs query
 	$serial = $_POST['serial'];
-	
-	//SQL query to insert new row into table
-	$sql = "SELECT * FROM chapman WHERE serial = '$serial'";
+		
+	//SQL query to compare
+	$sql = "SELECT * FROM morris WHERE serial = '$serial'";
 	$result = mysqli_query($conn, $sql);
 	
 	if($result->num_rows > 0) 

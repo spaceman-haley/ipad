@@ -1,4 +1,4 @@
-<form action="index.php" method = "POST">
+<form action="dawson.php" method = "POST">
   Serial Number: <input type="text" name="serial"><br>
  
   <input type="submit" value="Submit">
@@ -11,7 +11,7 @@
 	$serial = $_POST['serial'];
 	
 	//SQL query to insert new row into table
-	$sql = "SELECT * FROM chapman WHERE serial = '$serial'";
+	$sql = "SELECT * FROM dawson WHERE serial = '$serial'";
 	$result = mysqli_query($conn, $sql);
 	
 	if($result->num_rows > 0) 

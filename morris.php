@@ -27,9 +27,8 @@
 </script>
 
 <?php
-		include 'include/form.php';
+	include 'include/morrisform.php';
 ?>
-
 
 	</body>
 </html>
