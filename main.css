@@ -1,0 +1,69 @@
+
+h1{
+	font-size: 30px;
+	text-align: center;
+}
+
+html{
+	font-family: 'Raleway', sans-serif;
+}
+
+.mobile-app-filter-menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 0;
+  height: 2.8125rem;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  font-family: 'Raleway', sans-serif;
+}
+
+.mobile-app-filter-menu li a {
+  color: #b2b2b2;
+  font-family: 'Raleway', sans-serif;
+}
+
+.mobile-app-filter-menu li.is-active a {
+  color: #000000;
+  font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/*form styling*/
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    background-color: #FFFFCC;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
