@@ -6,7 +6,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 		<link rel ="stylesheet" href="main.css">
 		
-
 		<style>
 				
 		/*form styling*/
@@ -109,6 +108,18 @@
 		.dropdown:hover .dropdown-content {
 		    display: block;
 		}
+		
+		.validation {
+			color: green;
+			font-size: 25px;
+			font-weight: bold;
+		}
+		
+		.notfound {
+			color: red;
+			font-size: 25px;
+			font-weight: bold;
+		}
 
 	</style>
 	</head>
@@ -125,7 +136,6 @@
 	      <a href="form.php">Chapman</a>
 	      <a href="dawsonform.php">Dawson</a>
 	      <a href="morrisform.php">Morris</a>
-	      <a href="#">Reports</a>
 	    </div>
 	  </div> 
 	  <div class="dropdown">
@@ -134,7 +144,6 @@
 	      <a href="lakewoodform.php">Lakewood</a>
 	      <a href="montviewform.php">Montview</a>
 	      <a href="westlawnform.php">Westlawn</a>
-	      <a href="#">Reports</a>
 	    </div>
 	  </div> 
 	  <div class="dropdown">
@@ -143,7 +152,6 @@
 	      <a href="#">McDonnell</a>
 	      <a href="#">Ridgecrest</a>
 	      <a href="#">Sonnie Hereford</a>
-	      <a href="#">Reports</a>
 	    </div>
 	  </div> 
 	  <div class="dropdown">
@@ -152,7 +160,6 @@
 	      <a href="#">Highlands</a>
 	      <a href="#">MLK</a>
 	      <a href="#">Rolling Hills</a>
-	      <a href="#">Reports</a>
 	    </div>
 	  </div> 
 	</div>
