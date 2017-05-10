@@ -16,8 +16,12 @@
 	$school = "dawson";
 
 	include 'found.php';
+	
+	echo "<hr>";
+	
+	include 'report.php';
 
-	include 'insert.php';
+
 
 
 

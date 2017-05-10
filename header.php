@@ -109,6 +109,18 @@
 		.dropdown:hover .dropdown-content {
 		    display: block;
 		}
+		
+		.validation {
+			color: green;
+			font-size: 25px;
+			font-weight: bold;
+		}
+		
+		.notfound {
+			color: red;
+			font-size: 25px;
+			font-weight: bold;
+		}
 
 	</style>
 	</head>
@@ -125,7 +137,7 @@
 	      <a href="form.php">Chapman</a>
 	      <a href="dawsonform.php">Dawson</a>
 	      <a href="morrisform.php">Morris</a>
-	      <a href="#">Reports</a>
+	      <a href="report.php">Reports</a>
 	    </div>
 	  </div> 
 	  <div class="dropdown">
