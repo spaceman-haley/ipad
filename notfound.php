@@ -3,7 +3,10 @@
 	include 'dbconn.php';
 	include 'header.php';
 
+<<<<<<< HEAD
 if(isset($_POST['serial'])){
+=======
+>>>>>>> origin/master
 	$serial = $_POST['serial'];
 	$description = $_POST['description'];
 	$funding = $_POST['funding'];
@@ -11,6 +14,7 @@ if(isset($_POST['serial'])){
 	$found = $_POST['found'];
 
 	//SQL query to insert new item
+<<<<<<< HEAD
 		$sql = "INSERT INTO $school (serial, description, funding, location, found) VALUES ('$serial', '$description', '$funding', '$location', '$found')" ;
 		$result = mysqli_query($conn, $sql);
 
@@ -22,6 +26,11 @@ if(isset($_POST['serial'])){
 		}
 			mysqli_close($conn);
 		}		
+=======
+		$sql = "INSERT INTO dawson (serial, description, funding, location, found) VALUES ($serial, $description, $funding, $location, $found)" ;
+		$result = mysqli_query($conn, $sql);
+		
+>>>>>>> origin/master
 		
 	//form to insert
 	echo "<form action='notfound.php' method = 'POST'>
@@ -32,9 +41,15 @@ if(isset($_POST['serial'])){
 		Found?: <input type='text' name='found'><br>
  
 		<input type='submit' value='Submit'>
+<<<<<<< HEAD
 		</form>";
 		
 
+=======
+		</form>"
+		
+	
+>>>>>>> origin/master
 	
 ?>
 

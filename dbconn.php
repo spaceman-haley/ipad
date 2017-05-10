@@ -2,7 +2,7 @@
 
 	$server = 'localhost';
 	$user = 'root';
-	$password = '';
+	$password = 'sPangles&Glitter';
 	$db = 'ipad';
 	
 	$conn = mysqli_connect($server, $user, $password, $db);

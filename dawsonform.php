@@ -16,11 +16,21 @@
 	$school = "dawson";
 
 	include 'found.php';
-
 	
 	echo "<hr>";
 	
 	include 'report.php';
+
+
+<<<<<<< HEAD
+	
+	echo "<hr>";
+	
+	include 'report.php';
+=======
+
+
+>>>>>>> origin/master
 
 ?>
 	</body>
