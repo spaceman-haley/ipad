@@ -2,8 +2,10 @@
 	include 'header.php';
 ?>
 
+<center><h2>Dawson Elementary</h2></center>
+
 <form action="dawsonform.php" method = "POST">
-  Serial Number: <input type="text" name="serial"><br>
+  Serial Number: <input type="text" name="serial" id = "color" autofocus = "autofocus"><br>
  
   <input type="submit" value="Submit">
 </form>
@@ -11,8 +13,6 @@
 <?php
 	include 'dbconn.php';
 
-	//sets variables and runs query
-	$serial = $_POST['serial'];
 	$school = "dawson";
 
 	include 'found.php';
@@ -21,11 +21,11 @@
 	
 	include 'report.php';
 
-
-
-
+	
+	echo "<hr>";
+	
+	include 'report.php';
 
 ?>
-
 	</body>
 </html>
