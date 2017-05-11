@@ -136,10 +136,7 @@
 	      <a href="form.php">Chapman</a>
 	      <a href="dawsonform.php">Dawson</a>
 	      <a href="morrisform.php">Morris</a>
-<<<<<<< HEAD
-=======
-	      <a href="report.php">Reports</a>
->>>>>>> origin/master
+
 	    </div>
 	  </div> 
 	  <div class="dropdown">

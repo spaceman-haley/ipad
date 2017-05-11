@@ -21,16 +21,10 @@
 	
 	include 'report.php';
 
-
-<<<<<<< HEAD
 	
 	echo "<hr>";
 	
 	include 'report.php';
-=======
-
-
->>>>>>> origin/master
 
 ?>
 	</body>

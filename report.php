@@ -12,11 +12,10 @@ include 'dbconn.php';
 
 	<body>
 
-<<<<<<< HEAD
+
 	<a href = "createfile.php">DOWNLOAD REPORT</a>
 
-=======
->>>>>>> origin/master
+
 		<table>
 			<tr>
 				<th> Serial Number</th>
@@ -52,12 +51,7 @@ include 'dbconn.php';
 						
 		?>
 	</table>
-	
-<<<<<<< HEAD
-	
 
-    
-=======
 	<script>
 		function f_color(){
 		if (document.getElementById('.color').value = 'true') {
@@ -67,9 +61,6 @@ include 'dbconn.php';
 		}
 		f_color();
 	</script>
->>>>>>> origin/master
-
-
 
 	
 	</body>
