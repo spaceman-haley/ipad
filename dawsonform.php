@@ -1,4 +1,7 @@
 <?php
+	session_start();
+	$_SESSION['$school'] = "dawson";
+	$_SESSION['$url'] = "dawsonform.php";
 	include 'header.php';
 ?>
 
@@ -16,11 +19,6 @@
 	$school = "dawson";
 
 	include 'found.php';
-	
-	echo "<hr>";
-	
-	include 'report.php';
-
 	
 	echo "<hr>";
 	

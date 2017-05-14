@@ -133,7 +133,7 @@
 	  <div class="dropdown">
 	    <button class="dropbtn">Haley</button>
 	    <div class="dropdown-content">
-	      <a href="form.php">Chapman</a>
+	      <a href="chapmanform.php">Chapman</a>
 	      <a href="dawsonform.php">Dawson</a>
 	      <a href="morrisform.php">Morris</a>
 
@@ -150,17 +150,18 @@
 	  <div class="dropdown">
 	    <button class="dropbtn">Kim</button>
 	    <div class="dropdown-content">
-	      <a href="#">McDonnell</a>
-	      <a href="#">Ridgecrest</a>
-	      <a href="#">Sonnie Hereford</a>
+	      <a href="mcdonnellform.php">McDonnell</a>
+	      <a href="ridgecrestform.php">Ridgecrest</a>
+	      <a href="sherefordform.php">Sonnie Hereford</a>
+		  <a href="jemisonform.php">Jemison</a>
 	    </div>
 	  </div> 
 	  <div class="dropdown">
 	    <button class="dropbtn">Paula</button>
 	    <div class="dropdown-content">
-	      <a href="#">Highlands</a>
-	      <a href="#">MLK</a>
-	      <a href="#">Rolling Hills</a>
+	      <a href="highlandsform.php">Highlands</a>
+	      <a href="mlkform.php">MLK</a>
+	      <a href="rhillsform.php">Rolling Hills</a>
 	    </div>
 	  </div> 
 	</div>

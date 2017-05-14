@@ -1,5 +1,7 @@
 <?php
-include 'dbconn.php';
+	include 'dbconn.php';
+
+	$school = $_SESSION['$school'];
 
 ?>
 
@@ -26,7 +28,7 @@ include 'dbconn.php';
 			</tr>
 			
 		<?php
-			$sql = "SELECT * FROM dawson";
+			$sql = "SELECT * FROM $school";
 			$result = mysqli_query($conn, $sql);
 			$count = $result->num_rows;
 
