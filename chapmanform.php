@@ -1,13 +1,14 @@
+
 <?php
 	session_start();
-	$_SESSION['$school'] = "morris";
-	$_SESSION['$url'] = "morrisform.php";
+	$_SESSION['$school'] = "chapman";
+	$_SESSION['$url'] = "chapmanform.php";
 	include 'header.php';
 ?>
 
-<center><h2>Morris P8</h2></center>
+<center><h2>Chapman P8</h2></center>
 
-<form action="morrisform.php" method = "POST">
+<form action="chapmanform.php" method = "POST">
   Serial Number: <input type="text" name="serial" id = "color" autofocus = "autofocus"><br>
  
   <input type="submit" value="Submit">
@@ -16,7 +17,7 @@
 <?php
 	include 'dbconn.php';
 
-	$school = "morris";
+	$school = "chapman";
 
 	include 'found.php';
 	

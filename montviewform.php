@@ -1,9 +1,14 @@
 <?php
+	session_start();
+	$_SESSION['$school'] = "montview";
+	$_SESSION['$url'] = "montviewform.php";
 	include 'header.php';
 ?>
 
-<form action="form.php" method = "POST">
-  Serial Number: <input type="text" name="serial"><br>
+<center><h2>Montview Elementary</h2></center>
+
+<form action="montviewform.php" method = "POST">
+  Serial Number: <input type="text" name="serial" id = "color" autofocus = "autofocus"><br>
  
   <input type="submit" value="Submit">
 </form>
@@ -11,26 +16,14 @@
 <?php
 	include 'dbconn.php';
 
-	//sets variables and runs query
-	$serial = $_POST['serial'];
-	
-	//SQL query to insert new row into table
-	$sql = "SELECT * FROM montview WHERE serial = '$serial'";
-	$result = mysqli_query($conn, $sql);
-	
-	if($result->num_rows > 0) 
-	{
-		while ($row = mysqli_fetch_array($result)) 
-		{
-			echo "Serial # Found";
-		}
-	}
-	else
-	{
-		echo "No found match";
-	}
-		
-?>
+	$school = "montview";
 
+	include 'found.php';
+	
+	echo "<hr>";
+	
+	include 'report.php';
+
+?>
 	</body>
 </html>
