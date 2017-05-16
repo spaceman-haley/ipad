@@ -1,7 +1,15 @@
 <?php
 	session_start();
-	$_SESSION['$school'] = "dawson";
-	$_SESSION['$url'] = "dawsonform.php";
+	//redirect to login form if not logged in
+	
+	if(!$_SESSION["loggedin"])
+	{
+		header( 'location: index.php?nolog=failed');
+		exit();
+	}
+	
+	//$_SESSION['$school'] = "dawson";
+	//$_SESSION['$url'] = "dawsonform.php";
 	include 'header.php';
 ?>
 
@@ -16,7 +24,7 @@
 <?php
 	include 'dbconn.php';
 
-	$school = "dawson";
+	//$school = "dawson";
 
 	include 'found.php';
 	

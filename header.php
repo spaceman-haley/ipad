@@ -1,10 +1,11 @@
+
 <html>
 	<head>
 		<title> Keeping up the the iPads...</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-		<link rel ="stylesheet" href="main.css">
+		<link rel ="stylesheet" href="css/main.css">
 		
 		<style>
 				
@@ -127,9 +128,10 @@
 	<body>
 	
 	<h1>Keeping Up with the Ipads</h1>
+	<button><a href = "logout.php">LOGOUT</a></button>
 
 	<div class="container">
-	<a href = "index.php">HOME</a>
+	<a href = "main.php">HOME</a>
 	  <div class="dropdown">
 	    <button class="dropbtn">Haley</button>
 	    <div class="dropdown-content">
