@@ -8,14 +8,29 @@
 
 	$sql = "SELECT * FROM dawson";
 	$result = mysqli_query($conn, $sql);
-	$row = mysqli_Fetch_array($result, MYSQLI_NUM);
 	$fp = fopen('data.csv', 'w');
+  $i = 0;
 
+  //if any rows are present
 	if($result->num_rows > 0) 
 	{
+    //loop over every row
 		while($row = mysqli_fetch_array($result))
 		{
-			echo "fputcsv($fp, $row)";
+      //loop over the 5 entryes we want in the row
+      for($i = 0; $i < 5; $i++)
+      {
+        //output each entry
+			  echo(trim($row[$i + 1]));
+
+        //only output a comma if we're not on last row
+        if($i != 4)
+        {
+          echo(",");
+        }
+      }
+      //output a new line between each row
+      echo("\r\n");
 		}
 	}
 				
