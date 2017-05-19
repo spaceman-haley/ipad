@@ -8,14 +8,14 @@
 <html>
 	<head>
 	<title>Ipad Report</title>
-	<link rel ="stylesheet" href="css/reportcss.css">
+	<link rel ="stylesheet" href="reportcss.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 
 
-	<a href = "createfile.php">DOWNLOAD REPORT</a>
+	<a href = "includes/createfile.php">DOWNLOAD REPORT</a>
 
 
 		<table>
@@ -54,7 +54,15 @@
 		?>
 	</table>
 
-	
+	<script>
+		function f_color(){
+		if (document.getElementById('.color').value = 'true') {
+		document.getElementById('.color').style.color = "red";
+		document.getElementById('.color').style.background="yellow";
+		}
+		}
+		f_color();
+	</script>
 
 	
 	</body>
