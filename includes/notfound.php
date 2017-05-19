@@ -31,7 +31,7 @@
 		mysqli_close($conn);
 	}	
 	
-	header("refresh: 2; url=$url");
+	header("refresh: 2; url=../$url");
 ?>
 
 
