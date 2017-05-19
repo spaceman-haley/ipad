@@ -8,7 +8,7 @@
 
 	$sql = "SELECT * FROM dawson";
 	$result = mysqli_query($conn, $sql);
-	$fp = fopen('data.csv', 'w');
+	$fp = fopen('php://memory', 'w');
   $i = 0;
 
   //if any rows are present
@@ -34,5 +34,5 @@
 		}
 	}
 				
-	fclose($fp);
+	fpassthru($fp);
 ?>

@@ -128,7 +128,7 @@
 	<body>
 	
 	<h1>Keeping Up with the Ipads</h1>
-	<button><a href = "logout.php">LOGOUT</a></button>
+	<button><a href = "includes/logout.php">LOGOUT</a></button>
 
 	<div class="container">
 	<a href = "main.php">HOME</a>
