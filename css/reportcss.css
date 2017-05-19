@@ -1,0 +1,30 @@
+table, th, td {
+    border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*
+.color{
+	<script>
+		var colors={'true':{'background-color':'#ff0000',"color":'#ffffff'},
+					'FALSE':{'background-color':'#000000',"color":'#ffffff'},
+					};
+					
+		function colorize(colorsArr, selector) {
+		  $.each(colorsArr, function(color, obj) {
+			var regex = new RegExp('(' + color + ')', 'gi');
+			var style = ' style="' + JSON.stringify(obj).replace(/[{"}]/g, '').replace(',', ';') + '" '
+			var $element = $(selector);
+			var curComtent = $element.html();
+			if (curComtent.match(regex)) {
+			  var newContent = curComtent.replace(regex, '<span ' + style + '>$1</span>');
+			}
+			$element.html(newContent); 
+		  });
+		}
+
+		colorize(colors, '.color');
+	</script>
+}
+*/

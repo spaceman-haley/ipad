@@ -1,9 +1,11 @@
 
 <?php
 	session_start();
+
+	
 	$_SESSION['$school'] = "chapman";
 	$_SESSION['$url'] = "chapmanform.php";
-	include 'header.php';
+	include 'includes/header.php';
 ?>
 
 <center><h2>Chapman P8</h2></center>
@@ -15,15 +17,15 @@
 </form>
 
 <?php
-	include 'dbconn.php';
+	include 'includes/dbconn.php';
 
 	$school = "chapman";
 
-	include 'found.php';
+	include 'includes/found.php';
 	
 	echo "<hr>";
 	
-	include 'report.php';
+	include 'includes/report.php';
 
 ?>
 	</body>

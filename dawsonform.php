@@ -1,8 +1,12 @@
 <?php
 	session_start();
+	//redirect to login form if not logged in
+	
+	
 	$_SESSION['$school'] = "dawson";
 	$_SESSION['$url'] = "dawsonform.php";
-	include 'header.php';
+	include 'includes/header.php';
+	include 'includes/urlMsg.php';
 ?>
 
 <center><h2>Dawson Elementary</h2></center>
@@ -14,15 +18,15 @@
 </form>
 
 <?php
-	include 'dbconn.php';
+	include 'includes/dbconn.php';
 
 	$school = "dawson";
 
-	include 'found.php';
+	include 'includes/found.php';
 	
 	echo "<hr>";
 	
-	include 'report.php';
+	include 'includes/report.php';
 
 ?>
 	</body>
