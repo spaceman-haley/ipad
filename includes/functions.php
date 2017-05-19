@@ -1,6 +1,5 @@
 <?php
 
-include_once 'psl-config.php';
 
 function login($email, $password, $mysqli) {
     // Using prepared statements means that SQL injection is not possible. 
