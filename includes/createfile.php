@@ -1,12 +1,13 @@
 <?php
 	include 'dbconn.php';
-
+	session_start();
+	$school = $_SESSION['$school'];
 
 	// output headers so that the file is downloaded rather than displayed
 	header('Content-Type: text/csv; charset=utf-8');
 	header('Content-Disposition: attachment; filename=data.csv');
 
-	$sql = "SELECT * FROM dawson";
+	$sql = "SELECT * FROM $school";
 	$result = mysqli_query($conn, $sql);
 	$fp = fopen('php://memory', 'w');
   $i = 0;
