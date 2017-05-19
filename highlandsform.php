@@ -3,6 +3,7 @@
 	$_SESSION['$school'] = "highlands";
 	$_SESSION['$url'] = "highlandsform.php";
 	include 'includes/header.php';
+	include 'includes/urlMsg.php';
 	include 'includes/functions.php';
 	include_once 'includes/dbconn.php';
 ?>
