@@ -26,7 +26,7 @@
 		{							
 				//form to insert
 			echo "<div class = 'notfound'> No found match.  Please insert a new item into the database. </div><br>";
-			echo "<form action='notfound.php' method = 'POST'>
+			echo "<form action='includes/notfound.php' method = 'POST'>
 				Serial Number: <input type='text' name='serial'><br>
 				Description: <input type='text' name='description'><br>
 				Funding Source: <input type='text' name='funding'><br>
