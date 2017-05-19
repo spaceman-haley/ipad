@@ -2,7 +2,7 @@
 	session_start();
 	$_SESSION['$school'] = "mlk";
 	$_SESSION['$url'] = "mlkform.php";
-	include 'header.php';
+	include 'includes/header.php';
 ?>
 
 <center><h2>MLK Elementary</h2></center>
@@ -14,15 +14,15 @@
 </form>
 
 <?php
-	include 'dbconn.php';
+	include 'includes/dbconn.php';
 
 	$school = "mlk";
 
-	include 'found.php';
+	include 'includes/found.php';
 	
 	echo "<hr>";
 	
-	include 'report.php';
+	include 'includes/report.php';
 
 ?>
 	</body>
