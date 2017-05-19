@@ -4,7 +4,7 @@ include_once 'psl-config.php';
 
 function login($email, $password, $mysqli) {
     // Using prepared statements means that SQL injection is not possible. 
-    if ($stmt = $mysqli->prepare("SELECT id, username, password 
+    if ($stmt = $mysqli->prepare("SELECT id, username, password, salt 
         FROM members
        WHERE email = ?
         LIMIT 1")) {
@@ -13,7 +13,7 @@ function login($email, $password, $mysqli) {
         $stmt->store_result();
  
         // get variables from result.
-        $stmt->bind_result($user_id, $username, $db_password);
+        $stmt->bind_result($user_id, $username, $db_password, $db_salt);
         $stmt->fetch();
  
         if ($stmt->num_rows == 1) {
@@ -28,7 +28,10 @@ function login($email, $password, $mysqli) {
                 // Check if the password in the database matches
                 // the password the user submitted. We are using
                 // the password_verify function to avoid timing attacks.
-                if (password_verify($password, $db_password)) {
+
+                $new_hash = hash('sha512', $password . $db_salt);
+
+                if ($new_hash == $db_password) {
                     // Password is correct!
                     // Get the user-agent string of the user.
                     $user_browser = $_SERVER['HTTP_USER_AGENT'];
