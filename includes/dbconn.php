@@ -1,7 +1,7 @@
 <?php
 	ini_set( "display_errors", true );
 	$server = 'localhost';
-	$user = 'root';
+	$user = 'ipad';
 	$password = 'sPangles&Glitter';
 	$db = 'ipad';
 	
@@ -11,5 +11,6 @@
 		die("Connection failed: ".mysqli_connect_error()); 
 	}
 
+  $mysqli = $conn;
 	
 ?>
