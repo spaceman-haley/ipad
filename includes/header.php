@@ -1,11 +1,10 @@
-
 <html>
 	<head>
 		<title> Keeping up the the iPads...</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-		<link rel ="stylesheet" href="css/main.css">
+		<link rel ="stylesheet" href="main.css">
 		
 		<style>
 				
@@ -112,7 +111,13 @@
 		
 		.validation {
 			color: green;
-			font-size: 25px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.validationfail {
+			color: red;
+			font-size: 20px;
 			font-weight: bold;
 		}
 		
@@ -128,15 +133,14 @@
 	<body>
 	
 	<h1>Keeping Up with the Ipads</h1>
-	<button><a href = "includes/logout.php">LOGOUT</a></button>
 
 	<div class="container">
-	<a href = "main.php">HOME</a>
+	<a href = "index.php">HOME</a>
 	  <div class="dropdown">
 	    <button class="dropbtn">Haley</button>
 	    <div class="dropdown-content">
 	      <a href="chapmanform.php">Chapman</a>
-	      <a href="dawsonform.php?school=dawson">Dawson</a>
+	      <a href="dawsonform.php">Dawson</a>
 	      <a href="morrisform.php">Morris</a>
 
 	    </div>

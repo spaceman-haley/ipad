@@ -13,11 +13,12 @@
 		$description = $_POST['description'];
 		$funding = $_POST['funding'];
 		$location = $_POST['location'];
+		$schoolID = $_POST['schoolID'];
 		$found = $_POST['found'];
 
 		//SQL query to insert new item
 
-		$sql = "INSERT INTO $school (serial, description, funding, location, found) VALUES ('$serial', '$description', '$funding', '$location', '$found')" ;
+		$sql = "INSERT INTO $school (serial, description, funding, location, schoolID, found) VALUES ('$serial', '$description', '$funding', '$location', '$schoolID', $found')" ;
 		$result = mysqli_query($conn, $sql);
 
 		if ($result)
@@ -31,7 +32,7 @@
 		mysqli_close($conn);
 	}	
 	
-	header("refresh: 2; url=../$url");
+	header("refresh: 2; url=$url");
 ?>
 
 
